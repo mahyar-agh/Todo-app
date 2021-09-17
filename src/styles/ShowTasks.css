@@ -1,0 +1,41 @@
+.showTasks {
+  width: 100%;
+  padding: 10px 4px;
+  box-shadow: 20px 20px 50px #bbbfca;
+  border-radius: 20px;
+}
+.btnContainer > button {
+  border: none;
+  padding: 14px 25px;
+  background-color: transparent;
+  outline: none;
+  box-shadow: 3px 3px 8px #bbbfca;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 800ms;
+  font-weight: 600;
+}
+.btnContainer > button:active {
+  transform: translateY(-8px);
+}
+
+.taskContainer {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  cursor: pointer;
+}
+.taskContainer > .bullet {
+  width: 13px;
+  height: 13px;
+  border: 2px solid rgba(70, 131, 180, 0.637);
+  border-radius: 50%;
+  margin-right: 14px;
+}
+.taskContainer > .task > h4 {
+  font-size: 14px;
+  padding: 5px 0;
+}
+.taskContainer > .task > p {
+  font-size: 11px;
+}

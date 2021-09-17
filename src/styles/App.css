@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-color: #e1e8eb;
+  width: 100%;
+  height: 100vh;
+  color: #30475e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 90%;
+  height: 90vh;
+  border-radius: 30px;
+  /* padding: 10px; */
+  border: 5px solid #f9f9f9;
+  display: flex;
+  overflow-x: hidden;
+}
+
+/* modal */
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms;
+}
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.719);
+}
+.modal {
+  min-width: 300px;
+  background-color: whitesmoke;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.modal > label {
+  margin-bottom: 7px;
+}
+.modal > input {
+  border: 1px solid rgba(128, 128, 128, 0.562);
+  padding: 5px;
+  border-radius: 20px;
+  height: 30px;
+  outline: none;
+}
+.modal input[type="date"] + span {
+  margin-bottom: 15px;
+}
+.modal .error {
+  color: red;
+  font-size: 14px;
+}
+.modal > .btnContainer {
+  text-align: center;
+  margin-top: 15px;
+}

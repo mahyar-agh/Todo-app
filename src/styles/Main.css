@@ -1,0 +1,31 @@
+.mainContainer {
+  width: 65%;
+  box-shadow: 5px 5px 20px #bbbfca inset;
+  background-color: #f4f9f9;
+}
+ul.daysContainer {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom-right-radius: 30px;
+}
+ul.daysContainer > .item {
+  width: 14.28%;
+  text-align: center;
+  padding-top: 13px;
+  border-right: 1px solid slategray;
+  border-bottom: 1px solid slategray;
+  position: relative;
+}
+ul.daysContainer > .item > .task {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  padding: 2px 8px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 13px;
+  color: darkblue;
+}
